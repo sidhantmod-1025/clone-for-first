@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <style>
+ *{
+    margin :0;
+    padding:0;
+    font-family: "General Sans";
+    box-sizing:border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+      background-color: black;
+    
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#minicircle{
+  transform: all cubic-bezier(0.19 , 1 , 0.22 ,1) 1s;
+  width:10px;
+  height: 10px;
+  background-color: #ffff;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 99999;
+
+}
+.bounding{
+  width: fit-content;
+  overflow:hidden;
+}
+.bounding .boundingelem{
+  transform: translateY(100%);
+}
+
+#main{
+    overflow:hidden;
+}
+#main{
+    width:100%;
+}
+#hero{
+  position: relative;
+    width:100%;
+    height:100vh;
+    background-color: black;
+    color:white;
+}
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    width :100%;
+    padding:20px 40px;
+    color : #ffff;
+    
+}
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+}
+#heading{
+    margin-top:90px;
+    
+}
+#heading h1{
+    margin-left:30px;
+    opacity:.6;
+    line-height:1;
+    font-family:"GEneral Sans Medium";
+    font-size: 6vw;
+    text-transform:uppercase;
+    font-weight: 900;
+    
+}
+
+#heading #secondh1{
+    margin-left:190px;
+
+}
+.blocktext {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+    width: fit-content;
+}
+.blocktext h5{
+    text-transform:uppercase;
+    font-size:15px;
+    text-align:right;
+}
+
+ #chhotiheadings{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+    margin-top:100px;
+    padding-right:50px;
+ }
+ #chhotiheadings h5{
+    text-transform:uppercase;
+     text-align:right;
+     font-size:1vw;
+     margin-top:0.5vw;
+ }
+ #herrofooter{
+  padding-top:  22vw;
+    width:100%;
+    position:relative;
+    bottom:3%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+     
+ }
+  #herrofooter a {
+   
+    color:#ffff;
+    text-transform:uppercase;
+    text-decoration:none;
+  }
+   #herrofooter #iconset{
+    display:flex;
+   
+    gap:5px;
+
+   }
+   #herrofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color:#888;
+   }
+   #second{
+    padding-right:10vw;
+    padding-top:200px;
+    background-color:black;
+    width: 100%;
+    min-height: 100vh;
+   }
+   .elem{
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    width:100%;
+    padding:3.5vw 3vw;
+    padding-right: 0;
+    border-top:1px solid #888;
+   }
+   .elem h1{
+    color: white;
+    text-transform: uppercase;
+    font-size:8vw;
+    opacity: .7;
+   }
+   .elemlast{
+     border-bottom:1px solid #888;
+    margin-bottom:20px;
+   }
+  .elem img{
+    /*display: none;*/
+    width:25vw;
+    opacity: 0;
+    height:140%;
+    z-index:999;
+    position:absolute;
+  }
+  #about{
+      display:flex;
+    align-items: center;
+    color:white;
+    gap:20px;
+    width:100%;
+      background-color: black;
+      padding-top:10vw;
+    padding-left:40vw;
+    padding-right:10vw;
+  }
+  #textabout{
+    width:25rem;
+  }
+  #textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+  }
+  #textabout p{
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  #about img{
+    width:20vw;
+    height: 20vw;
+    border-radius: 50%;
+  }
+  #textabout a{
+    padding:22px;
+    border:1px solid #ffff;
+    border-radius: 190px;
+    color:#fff;
+    text-decoration: none;
+    font-size:12px;
+  }
+  #subscribe{
+     text-transform: uppercase;
+        font-size :14px;
+        margin-top:10px;
+    color:white;
+    padding:20px 30px;
+    padding-bottom:10vw;
+  }
+  
+   #subscribe h5{
+     text-transform: uppercase;
+     opacity:.6;
+
+   }
+    
+    #footer{
+        color:white;
+        display:flex;
+        align-items:center;
+       justify-content: space-between;
+       padding:40px 30px;
+    }
+
+    #footerleft{
+     display: flex;
+      gap:30px;
+    }
+    #footerright{
+        display: flex;
+        gap:30px;
+    }
+    #footer a{
+        text-transform: uppercase;
+        font-size:14px;
+        font-weight: 500;
+        color:white;
+        text-decoration: none;
+
+    }
+  </style>
+
+</head>
+<body>
+  <div id="minicircle"></div>
+  <div id="main">
+    <div id="hero">
+      <div id ="nav">
+        <a href="#">Cynthi Ugwu</a>
+        <h3>MENU+</h3>
+      </div>
+ 
+          <div id ="heading">
+            <div class="bounding">
+            <h1 class ="boundingelem">Product</h1>
+            </div>
+            <div class="blocktext">
+              <div class="bounding">
+            <h1  class ="boundingelem" id ="secondh1">Designer</h1>
+             </div>
+             <div class="bounding">
+            <h5 class ="boundingelem">Based in toronto</h5>
+            </div>
+          </div>
+          </div>
+          
+          <div id ="chhotiheadings">
+            <div class="bounding">
+            <h5  class ="boundingelem">available for freelance</h5>
+            </div>
+            <div class="bounding">
+            <h5  class ="boundingelem" >work from may 23'</h5>
+          </div>
+          </div>
+
+          <div id ="herrofooter">
+            <a href ="#">previously worked that at yml <i class="ri-arrow-right-up-line"></i> </a>
+            <a href ="#">protopie ambassdor <i class="ri-arrow-right-up-line"></i> </a>
+            <div id ="iconset">
+              <div class="circle"><i class="ri-arrow-down-line"></i></div>
+               <div class="circle"><i class="ri-arrow-down-line"></i></div>
+            </div>
+        </div>   
+        </div> 
+ 
+
+            <div id ="second">
+
+        <div class="elem">
+          <img src="./html.1.jpeg" alt="html.1">
+          <h1>The plug</h1>
+          <h5>2026</h5>
+       </div>
+        <div class="elem">
+         <img src="./html.2.jpg" alt="html.2">
+          <h1>ixperience</h1>
+           <h5>2026</h5>
+       </div>
+        <div class="elem elemlast">
+          <img src="./html.3.jpeg" alt="html.3">
+          <h1>hudu</h1>
+           <h5>2026</h5>
+       </div>
+
+              </div>
+                   <div id="about">
+                    <img src="./html.4.jpg" alt="hgtml.4">
+                   <div id="textabout">
+                       <h5>(ABOUT ME)</h5>
+                       <p>Iam a dedicated and enthusiastic Computer Science student with a strong passion for technology,
+       software development, and continuous learning. I have built a solid foundation in web development through hands-on experience with HTML, CSS, JavaScript, and Python. I enjoy creating projects that help me strengthen my technical skills and improve my problem-solving abilities.
+       My interest in programming motivates me to 
+       explore new technologies and stay updated with the latest industry trends.
+        Alongside my technical knowledge, I possess strong communication, teamwork,
+                         and time-management skills, which help me work effectively in both individual and collaborative environments. I am a quick learner who enjoys taking on new challenges and finding creative solutions to complex problems. Through various online courses, certifications, and personal projects, I continuously work on enhancing my knowledge and practical experience.</p>
+                            <a href = ""> Let's talk</a>
+                        </div>
+                     </div>
+   
+            <div id="subscribe">
+                      <h5>(Forgot to mention)</h5>
+                  <h3>Follow to my Linkdin profile <i class="ri-arrow-down-line"></i> </h3>
+                </div>
+       <div id="footer">
+                  <div id="footerleft">
+                    <h5>2026 &copy</h5>
+                    <h5>0.05 AAm EST</h5>
+                  </div>
+                  <div id="footerright">
+                    <a href="#">dribble</a>
+                    <a href="#">instagram</a>
+                    <a href="#">Linkdin</a>
+                    <a href="#">twitter</a>
+
+                  </div>
+       </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true,
+    multiplier: 1
+});
+function firstPageAnim(){
+    var t1 = gsap.timeline();
+
+    t1.from("#nav",{
+        y: "-10",
+        opacity: 0,
+        duration : 1.5,
+        ease: Expo.easeInout,
+    })
+    .to(".boundingelem",{
+        y: "0",
+        ease: Expo.easeInout,
+        duration: 2,
+        delay:-1,
+        stagger:.2,
+        
+    })
+    .from("#herrofooter",{
+       y:"-10",
+       opacity:0,
+       duration:1.5,
+       delay:-1,
+       ease:Expo.easeInout,  
+    })
+}
+
+function circleChapta() {
+
+
+    var xscale = 1;
+    var yscale = 1;
+
+    var xprev = 0;
+    var yprev = 0;
+
+    window.addEventListener("mousemove",function(dets){
+             var xdiff= dets.clientX - xprev;
+               var ydiff= dets.clientY - yprev;
+
+             xprev = dets.clientX;
+             yprev = dets.clientY;
+
+//limlit laga rahe hai ke hamra circle kitna chota hoga .
+
+           xscale =  gsap.utils.clamp(.8,1.2, xdiff);
+           yscale =   gsap.utils.clamp(.8,1.2, ydiff);
+
+         circleMouse( xscale,yscale);
+});
+}
+
+function circleMouse( xscale, yscale){
+    window.addEventListener("mousemove",function(dets){
+        document.querySelector("#minicircle"). style.transform = `translate(${dets.clientX}px,${dets.clientY}px)  scale(${xscale} ,${yscale })`;
+    });
+}
+ circleMouse();
+firstPageAnim(); 
+circleChapta() ;
+
+
+document.querySelectorAll(".elem").forEach(function (elem) {
+
+    var rotate = 0;
+    var diffoo = 0;
+
+    elem.addEventListener("mouseleave", function () {
+
+        gsap.to(elem.querySelector("img"), {
+            opacity: 0,
+            ease: "power3.out"
+        });
+
+    });
+
+    elem.addEventListener("mousemove", function (dets) {
+
+        var img = elem.querySelector("img");
+        var rect = elem.getBoundingClientRect();
+
+        var diff = dets.clientY - rect.top;
+
+        diffoo = dets.clientX - rotate;
+        rotate = dets.clientX;
+
+        gsap.to(img, {
+            opacity: 1,
+            ease: "power3.out",
+
+            top: diff - img.offsetHeight / 2,
+            left: dets.clientX - rect.left - img.offsetWidth / 2,
+
+            rotate: gsap.utils.clamp(-20, 20, diffoo)
+        });
+
+    });
+
+});
+  </script>
+</body>
+</html>
